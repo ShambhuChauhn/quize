@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content_box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: o;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+
+        .container {
+            position: relative;
+            width: 1200px;
+            height: 300px;
+            margin: 240px auto;
+        }
+
+        .container .box {
+            position: relative;
+            width: calc(400px - 30px);
+            height: calc(300px - 30px);
+            background: #21d4cb;
+            float: left;
+            margin: 15px;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 10px;
+
+        }
+        .container .box .icon{ position: absolute;
+            top: 0;
+            left: 0;
+
+        width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5;
+    z-index: 1;
+    }
+    .container .box:hover .icon{
+        top:20px;
+        left: calc( 50% - 40px);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .container .box .icon .fa-solid{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 80px;
+        transition: 0.5s;
+        color: #fff;
+    }
+    .container .box:hover .icon .fa-solid{ font-size: 40px;}
+    .container .box .content{position: absolute;
+        top: 100%;
+        height: calc(100% - 100px);
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+transition: 0.5s;
+opacity: 0;
+
+    }
+    .container .box:hover .content{
+        top: 100px;
+        opacity: 1;
+    }
+
+    .container .box .content h3{
+        margin: 0 0 10px;
+        padding: 0;
+        color: #fff;
+        font-size: 24px;
+
+    }
+    .container .box .content p{
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">
+             <div class="icon">
+                <i class="fa-solid fa-info"></i>
+            </div>
+            <div class="content">
+                <h3>Info </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi, aliquam laboriosam,
+                   temporibus adipisci aliquid culpa autem fuga perferendis neque nisi sed totam possimus v</p>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="content">
+                <h3>Search </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi, aliquam laboriosam,
+                   temporibus adipisci aliquid culpa autem fuga perferendis neque nisi sed totam possimus v</p>
+            </div>
+        </div>
+        
+        <div class="box">
+  <div class="icon">
+    <i class="fa-solid fa-map-marker-alt"></i>
+            </div>
+            <div class="content">
+                <h3>Info </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi, aliquam laboriosam,
+                   temporibus adipisci aliquid culpa autem fuga perferendis neque nisi sed totam possimus v</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
