@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THe lunar eclipse</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .space{
+            width: 90vw;
+            height: 50vh;
+            background-color: orange;
+            margin: 10px auto;
+        padding-top: 8vh;
+        animation: night 10s linear  infinite  ;
+        }
+        @keyframes night {
+            0%{}
+            50%{
+                background-color: black;
+            }
+            100%{
+                background-color: orange;
+            }
+            
+        }
+.sun{
+    background-color: rgb(255, 72, 0);
+    box-shadow: 0 0 10px red;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin: 0 auto;padding-top: .9vh;
+    padding-left: .5vw;
+    overflow: hidden;
+    
+    
+}
+.moon{
+width: 29vw;
+height: 29vh;
+background-color: white;
+border-radius: 50%;
+translate: 100%;
+animation: moon 10s linear  infinite;
+
+}
+@keyframes moon {
+    0%{
+        transform: translateX(0);
+    }
+    45%{
+        transform: translateX(-96%);
+        background-color: rgba(0, 0, 0, .3)
+    }
+    55%{
+        transform: translate(-96%);
+        scale: 1.04;
+        background-color: black;
+        box-shadow: 0 0 20px white;
+
+    }
+100%{
+    transform: translateX(-200%);
+}
+}
+h2{
+    text-align:center;
+    color:blue;
+font-weight: 900;
+border-bottom: 2px solid black;}
+</style>
+</head>
+<body>
+    
+    <div class="box">
+        <h2>The Lunar Eclipse </h2>
+        <div class="space">
+
+            <div class="sun">
+                <div class="moon">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

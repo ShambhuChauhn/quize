@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quize</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient(to right , tomato,white,  yellow); */
+background-color: black;
+}
+.head{
+    text-align: center;
+    color: green;
+    text-shadow: 0 0  12px greenyellow;
+    margin: 10px;
+    background-color: aqua;
+}
+.question{
+color: rgb(28, 248, 28);
+text-shadow: 0px 0px 1px white;
+
+}
+label:active{
+    color: red;
+}
+.option{
+margin: 5px;
+display: block;
+}
+label{
+    color: rgb(44, 67, 194);
+    display: block;
+font-weight: 700; 
+font-size: 20px;margin: 5px;
+
+}
+
+input{
+ color: blue;
+}
+button{
+    width: 100px;
+    height: 20px;
+    font-size: medium;
+    font-weight: 600;
+   background-color: aqua;
+   opacity: .7;
+   margin: 0 auto;
+align-items: center;
+margin: 20px auto;
+border-radius: 9px;
+}
+button:hover{
+    opacity: 1;
+}
+.quizeArea{
+    margin: 10px auto;
+    width: 70vw;
+}
+@media (max-width:600px) {
+    .quizeArea{
+     font-size: .6rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="quizeArea">
+    <div class="head">
+   <h1>QUIZE TIME</h1>
+<h2>Let's check your knowledg..........</h2>
+</div>
+
+<div >
+    <form >
+<h2 class="question">
+    Q1. Which language is scalton of the website ? </h2>
+<div class="option">
+
+    <label><input type="radio" name="q1" value="a">CSS</label>
+    <label><input type="radio" name="q1" value="b">JS</label>
+    <label><input type="radio" name="q1" value="c">HTML</label>
+    <label><input type="radio" name="q1" value="d">JAVA</label>
+
+
+</div>
+<h2  class="question">
+    Q2. Which is fastes language ?
+</h2>
+
+<div class="option">
+    <label ><input type="radio" name="q2" value="a"> python</label>
+<label ><input type="radio" name="q2" value="b"> C</label>
+<label ><input type="radio" name="q2" value="c"> C#</label>
+<label ><input type="radio" name="q2" value="d"> C++</label>
+
+</div>
+
+<h2 class="question">Q3.Which HTML attribute is used to define inline styles? </h2>
+
+<div class="option">
+
+    <label ><input type="radio" name="q3" value="a">class</label>
+<label ><input type="radio" name="q3" value="b">font</label>
+<label ><input type="radio" name="q3" value="c">styles</label>
+<label ><input type="radio" name="q3" value="d">style</label>
+
+</div>
+
+<h2 class="question"> Q4. Which HTML tag is used to define a table?</h2>
+
+<div class="option">
+    
+<label><input type="radio" name="q4" value="a">&lt; table &gt;</label>
+<label><input type="radio" name="q4" value="b">&lt; tab &gt;</label>
+<label><input type="radio" name="q4" value="c">&lt; tbl &gt;</label>
+<label><input type="radio" name="q4" value="d">&lt; grid &gt;</label>
+ 
+</div>
+<h2 class="question"> Q5. Which of the following is not a valid HTML5 input type?</h2>
+ 
+<div class="option">
+
+    <label ><input type="radio" name="q5" value="a">email </label>
+ <label ><input type="radio" name="q5" value="b"> date</label>
+ <label ><input type="radio" name="q5" value="c">number </label>
+ <label ><input type="radio" name="q5" value="d"> currency </label>
+ <button type="submit">Submit</button>
+</div>
+
+
+    </form>
+
+
+
+</div>
+
+
+    </div>
+</body>
+</html>

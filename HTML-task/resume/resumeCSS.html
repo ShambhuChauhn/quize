@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="icon" href="./favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeTamplet</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.name{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 9vh;
+    justify-content:space-between;
+}
+header h1{
+    text-align: center;
+    border-bottom: 2px  solid tan;
+
+}
+.img{
+    width: 200px;
+    height: 200px;
+ 
+
+& img{
+
+    width: 100%;
+border-radius: 30px;
+}
+}
+.lable{
+    font-size: 1.3rem;
+    color: rgb(52, 95, 160); margin: 10px;
+}
+.detail h2{
+    background-color: red;
+    margin: 10px;
+}
+label{
+    font-weight: 700;
+    margin-left: 20px;
+    
+    
+}
+.range{
+    width: 40vw;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 9px;
+    margin: 10px;
+    & .value{
+        width: 90%;
+      
+    background-color: cornflowerblue;
+        height: 100%;
+        border-radius: 9px;
+    }
+}
+ .range .value1{
+    width: 90%;height: 100%;
+    
+}
+.range .value2{
+    width: 80%;
+    height: 100%;
+}
+.range .value3{
+    width: 10%;height: 100%;
+}
+
+@media (max-width:300px) {
+    .name{
+        display: block;
+        
+        
+    }
+    
+}
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Resume </h1>
+</header>
+<div class="name">
+   <div><h2>SHAMBHU KUMAR </h2> <p>WEB DEVELOPER / FRONTEND DEVELOPER</p>
+   </div>
+ <div class="img"><img src="./img/shambhu_img.jpg"  alt=""></div>
+</div>
+<main>
+<section>
+
+
+    <div>
+
+<span class="detail"><h2>Contact :</h2></span>
+</div>
+
+<div>
+<span class="lable">Email :</span>
+<span class="lable data">shambhukumaronly@gmail.com</span>
+</div>
+<div>
+   
+
+    <span class="lable">Mobile No: </span>
+<span class="lable data">   9128087466</span>
+</div>
+<div>
+<span class="lable">WhatsApp No: </span>
+<span class="lable data">   9128087466</span>    
+</div>
+
+<div class="detail">
+    <h2>Current Position :</h2>
+    <p class="lable"> I am currently college student . </p>
+
+
+    <h2>Work Experience :</h2>
+<p class="lable">I  am fresher . I have no any work experience .</p>
+<h2>Education :
+
+</h2>
+<p class="lable"> 2019 : Matriculation</p>
+<p class="lable">2021 :Intermediate</p>
+<p class="lable"> 2024 : Diploma in Computer Science and Engineering
+</p>
+</div>
+<div class="detail">  
+<h2> Skill : </h2>
+
+<label for="html">HTML</label>
+<div class="range" id="html"> <div class="value value1"> </div>  </div>
+
+
+
+<label for="html">CSS</label>
+<div class="range" id="html"> <div class="value value2"> </div>  </div>
+
+
+
+<label for="html">Python</label>
+<div class="range" id="html"> <div class="value value3"> </div>  </div>
+
+</div>
+
+
+</section>
+
+</main>
+</body>
+</html>

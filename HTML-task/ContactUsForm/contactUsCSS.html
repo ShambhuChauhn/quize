@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactUs</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          
+             }
+             
+             body{
+                  background-image: repeating-linear-gradient(to left , blue , cyan , white )
+             }
+             .container{
+                width: 50vw;
+                font-size: 1rem;
+                margin: 10px auto;
+                border: 1px solid black;
+                box-shadow: 2px 2px 2px blue;
+                background-image: repeating-linear-gradient(to top , red , whitesmoke, blue);
+
+             }
+             h1{
+                text-align: center;
+                         }
+                         .label{
+                            margin: 10px;
+                        & input{
+                            height: 32px;
+                            width: 100%;
+                            
+                        }    
+                         }
+                         button{
+                            width: 100%;
+                            background-color: rgb(167, 235, 235);
+                            height: 30px;
+                            border: none;
+                            font-weight: bold;
+                            letter-spacing: 1px;
+                            word-spacing: 3px;
+                         }
+                         
+                         button:hover{
+                            background-color: rgb(4, 252, 252);
+                            
+                            border: 2px solid black;
+                            cursor: pointer;
+                         }
+                         textarea{
+                            width: 100%;
+                            word-spacing: 3px;
+                            letter-spacing: 1.2px;
+                            
+                         }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Contact us</h1>
+        <div class="cntform">
+    <form action="">
+        <div class="label">
+            <label for="name">Name : </label><br>
+        <input type="text" id="name" placeholder="Enter your name" required> </div>
+        <div class="label" ><label for="email">
+        Email :</label><br>
+            <input type="text " id="email" placeholder="enter Email addres" required>
+         </div>
+         <div class="label">
+
+            <label for="message">Message :</label>
+            <textarea name="message" id="message" rows="5"   required></textarea>
+         </div>
+         <div class="label">
+            <button type="submit">Send Message</button>
+         </div>
+       
+    </form>
+</div>
+
+    </div>
+</body>
+</html>

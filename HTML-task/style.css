@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+@font-face {
+    font-family: shambhu;
+    src: url(./fonts/ethnocentric\ rg.otf);
+}
+.container{
+ 
+    height: 10vh;
+    width: 100vw;
+    /* background-color:  rgb(153, 208, 218); */
+    grid-template-columns: 20vw 80vw ;
+    
+    position: relative;
+    display: grid;
+    /* box-shadow: 0 0 10px grey; */
+    
+}
+.logo{
+    
+    background-color: rgb(153, 208, 218);
+}
+.nav{
+    background-color: rgb(194, 194, 194);
+position: relative;
+align-items: center;
+}
+.menu{
+    bottom: 0;
+/* right: 40%; */
+word-spacing: 2px;
+font-weight: 900;
+
+/* top: 50%; */
+
+right: 0;
+/* transform: translate(-50% ,-50%); */
+bottom: 0;
+/* letter-spacing: 2px; */
+    font-size: 1.5rem;
+    position: absolute;
+    list-style-type: none;
+display: flex;
+flex-wrap: nowrap;
+gap: 2vw;
+
+
+/* padding-left: 50%; */
+}
+
+.aa{
+    text-decoration: none;
+
+}
+.name{
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 2px lightcoral;
+top: 40%;
+border-bottom: 4px dashed red;
+border-bottom-width: 50%;
+
+left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 2.5rem;
+    font-family: shambhu;
+position: absolute;
+flex-wrap: nowrap;
+
+}
+.aa:link{
+    color: black;
+    }
+    .aa:hover{color: aliceblue;
+     border-bottom: 3px solid mediumspringgreen;
+     transition: all .3s linear;
+     background-color:  rgb(194, 194, 194);
+     /* background-color: rgb(162, 197, 238); */
+    }
+    .aa:active{
+        color: aliceblue;
+        background-color: rgb(175, 154, 180);
+    }
+    .logo{
+        box-shadow: 0 0 5px red;
+    border: none; } 
+.logo:hover{
+    transition: all .6s linear;
+    /* transform: rotate(360deg);
+     */
+     transform: rotateY(360deg);
+   
+
+}
+.hero-container{
+margin-top: 7.6%;
+    width: 100vw;
+    background-color: rgb(195, 224, 175);
+    border: 2px solid black;
+    /* height: 900px; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
+
+}
+.task{
+    margin-top: 5%;
+text-align: center;
+position:relative;
+
+}
+.tasktitle{
+  
+  color: rgb(8, 8, 10);
+  font-size: 2rem;
+  border-bottom: 2px solid rgb(160, 75, 75);
+  border-radius: 50%;
+ background-color: red;
+}
+
+.tasktitle:hover{
+    /* color:rgb(128, 79, 125); */
+    color: rgb(214, 180, 116);
+    text-shadow:  0 0 10px black;
+    
+    
+}
+
+
+table{
+    font-size: 1.5rem;
+    margin-left: 30%;
+    margin-right: 60%;
+    width: 40%;
+    border: 2px solid black;
+    align-items: center;
+& th{
+    font-size: 1.5rem;
+    color: red;
+padding: 0 0 10px 50px;
+    text-align: center;}
+  & tr{
+    font-size: 1.6rem;
+    text-align: left;
+
+}
+
+}  
+.row2{
+    background-color: rgb(112, 212, 187);}
+.row1{
+    background-color: rosybrown;}
